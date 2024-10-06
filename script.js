@@ -63,7 +63,6 @@ function tick() {
 
   queue.dequeue();
 
-  // Move the head based on the direction
   switch (direction) {
     case "left":
       head.col--;
@@ -92,8 +91,6 @@ function tick() {
     default:
       break;
   }
-
-  // Check if the head has hit the body
 
   if (readFromCell(head.row, head.col) === 2) {
     queue.enqueue({ row: queue.tail.data.row, col: queue.tail.data.col });
@@ -140,8 +137,6 @@ function readFromCell(row, col) {
 // #region view
 function displayGrid() {
   const board = document.querySelector("#grid");
-
-  // this following will create cells in the grid
   for (let row = 0; row < GRID_HEIGHT; row++) {
     for (let col = 0; col < GRID_WIDTH; col++) {
       const cell = document.createElement("div");
@@ -176,10 +171,10 @@ function updateGrid() {
         case 0:
           cells[index].classList.remove("player", "goal");
           break;
-        case 1: // Note: doesn't remove goal if previously set
+        case 1:
           cells[index].classList.add("player");
           break;
-        case 2: // Note: doesn't remove player if previously set
+        case 2:
           cells[index].classList.add("goal");
           break;
       }
