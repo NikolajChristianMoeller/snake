@@ -152,7 +152,6 @@ function displayGoal() {
   const row = Math.floor(Math.random() * GRID_HEIGHT);
   const col = Math.floor(Math.random() * GRID_WIDTH);
   console.log(`row: ${row}, col: ${col}`);
-
   writeToCell(row, col, 2);
 }
 
