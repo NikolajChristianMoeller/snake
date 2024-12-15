@@ -1,9 +1,11 @@
-# Snake Game
+# Snake
 
-This is a classic Snake game implemented using HTML, JavaScript, and CSS. The player controls the snake to collect goals and grow longer while avoiding collisions with the walls or the snake's own body. Although I am not finished with the functionality where the snake kills itself when eating itself. The game features a responsive grid and tracks the player's score.
+This is a classic Snake game implemented using HTML, JavaScript, and CSS.
 
-Link for the deployed version on GitHub Pages
+The player controls the snake to collect food and grow longer while avoiding collisions with the walls or the snake's own body.
 
-https://nikolajchristianmoeller.github.io/Snake/
+The game features a responsive grid and tracks the player's score.
 
-Enjoy!
+Link to the deployed version on GitHub Pages:
+
+https://nikolajchristianmoeller.github.io/snake/
